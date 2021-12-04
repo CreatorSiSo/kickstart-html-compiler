@@ -2,17 +2,19 @@ import typescript from "@rollup/plugin-typescript";
 import pkg from "./package.json";
 
 export default [
-  {
-    input: "src/index.ts",
-    output: {
-      name: "kickstartHtmlCompiler",
-      file: pkg.browser,
-      format: "umd",
-    },
-    plugins: [
-      typescript({ tsconfig: "./tsconfig.json" }),
-    ],
-  },
+  // {
+  //   input: "src/index.ts",
+  //   output: {
+  //     name: "kickstartHtmlCompiler",
+  //     file: pkg.browser,
+  //     format: "umd",
+  //   },
+  //   plugins: [
+  //     // resolve(), // so Rollup can find `ms`
+  //     // commonjs(), // so Rollup can convert `ms` to an ES module
+  //     typescript({ tsconfig: "./tsconfig.json" }),
+  //   ],
+  // },
 
   // CommonJS (for Node) and ES module (for bundlers) build.
   // (We could have three entries in the configuration array

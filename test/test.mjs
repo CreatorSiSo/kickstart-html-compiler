@@ -1,4 +1,4 @@
-import compiler from "../dist/index.esm.js";
+import compiler from "../dist/index.esm.mjs";
 
 const templates = new Map([
   ["Template1", "<section><strong>Template 1</strong></section>"],
